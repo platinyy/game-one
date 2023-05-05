@@ -3,7 +3,7 @@
 
 ### By: Platin Syla 
 
-####  | [GitHub](https://github.com/platinyy) |
+####  | [GitHub](https://github.com/platinyy/game-one) |
 
 ---
 
