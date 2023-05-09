@@ -47,4 +47,9 @@
     transition: 0.3s all ease;
   }
   
+  .card.clicked {
+    background-color: orange;
+
+  }
+  
   

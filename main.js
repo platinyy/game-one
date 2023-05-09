@@ -23,4 +23,13 @@ another button to reset and play the game again.
 let counter = 0;
 let firstSelection = "";
 let secondSelection = "";
+
 const cards = document.querySelectorAll(".cards .card");
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.add("clicked");
+    
+  
+   
+});
+})
