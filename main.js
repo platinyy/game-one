@@ -20,3 +20,7 @@ and I will change the opacity to 1 to the class to make the picture visible.
 I will add one button to start the game and 
 another button to reset and play the game again.
 */
+let counter = 0;
+let firstSelection = "";
+let secondSelection = "";
+const cards = document.querySelectorAll(".cards .card");
