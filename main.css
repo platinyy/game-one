@@ -50,7 +50,7 @@
   
   .card.clicked {
     background-color: orange;
-
+    pointer-events: none;
   }
   
   .card.checked {
@@ -112,4 +112,5 @@
       transform: translate(1px, -2px) rotate(-1deg);
     }
   }
-   
+
+  
