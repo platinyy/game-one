@@ -24,6 +24,8 @@ let counter = 0;
 let firstSelection = "";
 let secondSelection = "";
 const btn = document.getElementById("btn1")
+const startgame = document.getElementById("btn2")
+const conti= document.getElementById("container")
 
 const cards = document.querySelectorAll(".cards .card");
 cards.forEach((card) => {
@@ -73,3 +75,8 @@ btn.addEventListener("click", () => {
     })
    
 });
+
+startgame.addEventListener("click", () =>{
+    conti.style.opacity = 1;
+    startgame.style.opacity = 0;
+    })
