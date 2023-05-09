@@ -36,7 +36,7 @@ cards.forEach((card) => {
       } else {
         secondSelection = card.getAttribute("animal");
         counter = 0;
-      }
+      
       if (firstSelection === secondSelection) {
         const correctCards = document.querySelectorAll(
           ".card[animal='" + firstSelection + "']"
@@ -48,7 +48,14 @@ cards.forEach((card) => {
         
         correctCards[1].classList.add("checked");
         correctCards[1].classList.remove("clicked");
+      }
+      else {
+        const incorrectCards = document.querySelectorAll(".card.clicked");
+
+        incorrectCards[0].classList.add("shake");
+        incorrectCards[1].classList.add("shake");
         
       }
-});
+}
+})
 })
