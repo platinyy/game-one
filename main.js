@@ -23,6 +23,7 @@ another button to reset and play the game again.
 let counter = 0;
 let firstSelection = "";
 let secondSelection = "";
+const btn = document.getElementById("btn1")
 
 const cards = document.querySelectorAll(".cards .card");
 cards.forEach((card) => {
@@ -65,3 +66,10 @@ cards.forEach((card) => {
 }
 })
 })
+btn.addEventListener("click", () => {
+    cards.forEach((card) =>{
+        card.classList.remove("clicked", "checked")
+        counter = 0;
+    })
+   
+});
