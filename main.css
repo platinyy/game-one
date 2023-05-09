@@ -52,4 +52,12 @@
 
   }
   
+  .card.checked {
+    background-color: lightgreen;
+    pointer-events: none;
+  }
   
+  .card.clicked img,
+  .card.checked img {
+    opacity: 1;
+  }

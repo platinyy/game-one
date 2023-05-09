@@ -37,5 +37,18 @@ cards.forEach((card) => {
         secondSelection = card.getAttribute("animal");
         counter = 0;
       }
+      if (firstSelection === secondSelection) {
+        const correctCards = document.querySelectorAll(
+          ".card[animal='" + firstSelection + "']"
+          
+        );
+        
+        correctCards[0].classList.add("checked");
+        correctCards[0].classList.remove("clicked");
+        
+        correctCards[1].classList.add("checked");
+        correctCards[1].classList.remove("clicked");
+        
+      }
 });
 })
