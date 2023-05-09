@@ -54,6 +54,12 @@ cards.forEach((card) => {
 
         incorrectCards[0].classList.add("shake");
         incorrectCards[1].classList.add("shake");
+        setTimeout(() => {
+            incorrectCards[0].classList.remove("shake");
+            incorrectCards[0].classList.remove("clicked");
+            incorrectCards[1].classList.remove("shake");
+            incorrectCards[1].classList.remove("clicked");
+          }, 800);
         
       }
 }
