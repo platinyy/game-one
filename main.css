@@ -62,6 +62,17 @@
   .card.checked img {
     opacity: 1;
   }
+  #btn1{
+    padding: 8px;
+    font-size:15px;
+    font-weight: 600;
+    border-width: 3px;
+  }
+
+  #btn1:hover{
+    background-color: darkgrey;
+    cursor: pointer;
+  }
   .card.shake {
     background-color: #f15f5f;
     animation: shake 0.5s;
