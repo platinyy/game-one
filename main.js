@@ -24,7 +24,6 @@ let counter = 0;
 let firstSelection = "";
 let secondSelection = "";
 const btn = document.getElementById("btn1")
-const startgame = document.getElementById("btn2")
 const conti= document.getElementById("container")
 
 const cards = document.querySelectorAll(".cards .card");
@@ -33,16 +32,16 @@ cards.forEach((card) => {
     card.classList.add("clicked");
     
     if (counter === 0) {
-        firstSelection = card.getAttribute("animal");
+        firstSelection = card.getAttribute("fruit");
         counter++;
       
       } else {
-        secondSelection = card.getAttribute("animal");
+        secondSelection = card.getAttribute("fruit");
         counter = 0;
       
       if (firstSelection === secondSelection) {
         const correctCards = document.querySelectorAll(
-          ".card[animal='" + firstSelection + "']"
+          ".card[fruit='" + firstSelection + "']"
           
         );
         
@@ -76,7 +75,3 @@ btn.addEventListener("click", () => {
    
 });
 
-startgame.addEventListener("click", () =>{
-    conti.style.opacity = 1;
-    startgame.style.opacity = 0;
-    })
