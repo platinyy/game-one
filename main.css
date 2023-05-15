@@ -79,7 +79,10 @@
   .round {
     border-radius: 50%;
   }
-
+#btn2{
+  display: block;
+  margin: 350px auto;
+}
   #btn1 , #btn2{
     padding: 8px;
     font-size:15px;
